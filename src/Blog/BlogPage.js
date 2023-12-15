@@ -13,8 +13,8 @@ const BlogPage = () => {
   const storedPosts = localStorage.getItem('blogPosts');
   const [selectedFile, setSelectedFile] = useState();
   useEffect(() => {
-    // Retrieve posts from localStorage on component mount
     
+    // Retrieve posts from localStorage on component mount
     if (storedPosts != null) {
       setPost(JSON.parse(storedPosts));
     }

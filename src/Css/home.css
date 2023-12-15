@@ -98,8 +98,8 @@
     margin-right: auto;
     width: 50%;
     display: relative;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
-    justify-content: space-around; /* Adjust this according to your layout preference */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
     
   }
 
@@ -133,7 +133,6 @@
   }
   
   .imageee {
-     /* Take up all available space */
     width: 49%;
     float:left;
     

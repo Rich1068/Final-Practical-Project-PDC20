@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Routes, Route} from 'react-router-dom';
 import Blog from './Blog/BlogPage';
 import Home from './Blog/HomePage';
 import About from './AboutUs/AboutPage';
@@ -11,13 +11,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentRoute: sessionStorage.getItem('currentRoute') || 'Home', // Default header text
-      // headerBackgrounds: {
-      //   Home: 'url("/home.jpg")',
-      //   Contact: 'url("/contact.jpg")',
-      //   'Create Post': 'url("/create.jpg")',
-      //   'About Us':'url("/about.jpg")',
-      // },
+      currentRoute: sessionStorage.getItem('currentRoute' || 'Home'),
     };
   }
 
@@ -27,8 +21,6 @@ class App extends Component {
   };
 
   render() {
-    const { username } = this.props;
-    // const { currentRoute, headerBackgrounds } = this.state;
 
     return (
       <Router>
@@ -93,20 +85,6 @@ class App extends Component {
         </div>
 
         <div>
-        {/* <header
-            className="header py-5"
-            style={{
-              backgroundImage: headerBackgrounds[currentRoute],
-            }}
-          >
-            <div className="container">
-                <div className="text-center my-5">
-                    <h1 className="fw-bolder">Welcome to {this.state.currentRoute},</h1>
-                    <h4>{username}</h4>
-                </div>
-            </div>
-        </header> */}
-        
         <br></br>
         <br></br>
           <Routes>

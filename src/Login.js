@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Css/login.css';
-import { BrowserRouter as Router, Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 
 const Login = ({onLogin})=> {
@@ -15,7 +15,7 @@ const Login = ({onLogin})=> {
             alert('Username or Password is missing')
         };
     }
-    
+
 return(
 <Router>
 <div className='body' >
@@ -44,7 +44,7 @@ return(
     <br></br>
     <br></br>
     <div className='login'>
-    <Link to= {sessionStorage.setItem('currentRoute', Route)} onClick={handleLogin}>Login </Link>
+    <Link to='/home' onClick={handleLogin}>Login </Link>
     </div>
   </form>
 

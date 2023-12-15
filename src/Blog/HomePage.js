@@ -18,7 +18,7 @@ const HomePage = () => {
       <br></br>
       <br></br>
       <div className='images'>
-      <img style={{ width: '300px', height: 'auto' }} src='ViewPost.png'/>
+      <img style={{ width: '300px', height: 'auto' }} src='assets/ViewPost.png'/>
       </div>
       <br></br>
       <div className='test'>
