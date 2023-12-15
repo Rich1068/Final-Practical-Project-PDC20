@@ -1,0 +1,27 @@
+
+.aboutBG {
+    background-image: url('/public/assets/aboutImage.png');
+    min-height: 100vh;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.containerr {
+    display: block;
+    margin-bottom: 8px;
+    color:#F6DAAA;
+    
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+}
+.images {
+    text-align: center;
+}
+.images img {
+    display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
